@@ -1,0 +1,499 @@
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Alice|Allura|Amita|Architects+Daughter|Carrois+Gothic+SC|Caveat|Charm|Cormorant+SC|Dynalight|Euphoria+Script|Gochi+Hand|Gruppo|Habibi|Handlee|IM+Fell+DW+Pica+SC|IM+Fell+French+Canon+SC|IM+Fell+Great+Primer|Julius+Sans+One|Kaushan+Script|La+Belle+Aurore|Megrim|Mr+Dafoe|Over+the+Rainbow|Overlock+SC|Patrick+Hand+SC|Poiret+One|Rock+Salt|Sacramento|Sofia|Spectral+SC|Spinnaker|Syncopate|Thasadith|Zeyada');
+
+
+body {
+  position: absolute;
+  margin: 0;
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (max-width: 600px) {
+
+  .body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%
+  }
+    
+  .App-header {
+      top: 0px;
+      width: 100%;
+      height: auto;
+      z-index: 2;
+      color: #157b48;
+      background-color: #e3ede9;
+      border-bottom: 1px solid #3bb29b;
+  }
+
+  .headerIcons {
+      width: 100%;
+      font-size: 13px;
+      text-align: center;
+      font-family: Arial, Helvetica;
+      border: none;
+      cursor: pointer;
+      background-color:rgba(255, 255, 255, 0);
+  }
+
+  .headerIconsOnly {
+    justify-content: center;
+    width: 100%;
+  }
+
+  a {
+      background-color: rgba(255, 255, 255, 0);
+      color: #157b48;
+  }
+
+  a:hover {
+      background-color: rgba(255, 255, 255, 0);
+      color: #66d6d2;
+  }
+
+  .nikksterTechHeader {
+    width: 100%;
+    font-size: 38px;
+    font-family: "Allura";
+    color: #226868;
+    justify-content: center;
+    display: inline;
+    font-weight: bold;
+  }
+
+  .projHomeToggleDiv {
+    font-family: "Over+The+Rainbow";
+    background-color: #e3ede9;
+    position: relative;
+  }
+
+  .projHomeToggleBtn {
+    background-color: rgba(255, 255, 255, 0);
+    color: #157b48;
+    font-size: 20px;
+    font-family: "Kaushan Script";
+    border: 0px;
+    border-radius: 20px;
+    width: auto%;
+    right: 30px;
+    margin: 4px 6px 10px 6px;
+    padding: 0px 4px 4px 4px;
+
+  }
+
+  .projHomeToggleBtn:hover {
+    color: #157b48;
+    background-color: #66d6d2;
+  }
+
+  .App-footer{
+    height: 150px;
+    background-color: #e3ede9;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .footerIcons > p {
+    margin: 10px;
+    font-size: 18px;
+  }
+    
+    .LanguagesContainer{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .indvLang {
+    width:100vh;
+    height: auto;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 35px 10px 35px;
+    position: relative;
+  }
+
+  .indvLang:hover {
+    background-color: #226868;
+    color: #e3ede9;
+  }
+
+  .skillsContainer {
+    display: grid;
+  }
+    
+    .profileImg{
+      width: 300px;
+      height: auto;
+      border-radius: 40px;
+      border: 10px solid #e3ede9;
+      padding: 3px;
+      margin: 50px 0px 0px 0px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+    .body {
+      margin: 0px;
+      padding: 0px;
+}
+    
+    .App-header {
+        grid-column: 2fr 1fr;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+        grid-template-rows: repeat(auto-fit, minmax(10px, auto));
+        top: 0px;
+        width: 100%;
+        height: 40px;
+        z-index: 2;
+        position: sticky;
+        color: #157b48;
+        background-color: #e3ede9;
+        border-bottom: 1px solid #3bb29b;
+    }
+
+    .headerIconsOnly {
+      display: inline;
+    }
+
+    .headerIcons {
+        font-size: 13px;
+        font-family: Arial, Helvetica;
+        text-align: left;
+        padding: 5px 5px 5px 15px;
+        border: none;
+        cursor: pointer;
+        display: inline;
+        background-color:rgba(255, 255, 255, 0);
+    }
+
+    a {
+        background-color: rgba(255, 255, 255, 0);
+        color: #157b48;
+    }
+
+    a:hover {
+        background-color: rgba(255, 255, 255, 0);
+        color: #66d6d2;
+    }
+
+    .nikksterTechHeader {
+      font-size: 30px;
+      font-family: "Allura";
+      color: #226868;
+      display: inline;
+      padding: 0px 15px 0px 0px;
+      font-weight: bold;
+    }
+
+
+    .projHomeToggleDiv {
+      font-family: "Over+The+Rainbow";
+      background-color: #e3ede9;
+      grid: -1;
+      text-align: right;
+      display: flex;
+      position: relative;
+    }
+
+    .projHomeToggleBtn {
+      background-color: rgba(255, 255, 255, 0);
+      color: #157b48;
+      font-size: 20px;
+      font-family: "Kaushan Script";
+      border: 0px;
+      border-radius: 20px;
+      width: auto%;
+      right: 30px;
+      margin: 4px 6px 10px 6px;
+      padding: 0px 4px 4px 4px;
+      position: absolute;
+        top: 0px;
+        right: 15px;
+    }
+
+    .projHomeToggleBtn:hover {
+      color: #157b48;
+      background-color: #66d6d2;
+    }
+
+
+
+
+
+    .App-footer{
+      height: 190px;
+      font-size: 20px;
+      font-weight: bold;
+      background-color: #e3ede9;
+      text-align: right;
+      display: grid;
+      grid-template-columns: 1fr 6fr 6fr 1fr;
+      grid-template-rows: repeat(auto-fit, minmax(50px, auto));
+      float: right;
+      width: 100%;
+      position: relative;
+
+    }
+
+    .footerLeft {
+      grid-column: 2 / 3;
+      text-align: left;
+    }
+
+    .footerIcons {
+      grid-column: 3/4;
+      position: absolute;
+        right: 0px
+    }
+    
+    
+    .profileImg{
+      width: 40vh;
+      height: auto;
+      border-radius: 40px;
+      border: 10px solid #e3ede9;
+      padding: 3px;
+      margin: 50px 0px 0px 0px; 
+    }
+}
+
+
+
+
+
+
+
+.App {
+  grid-column: 2fr 1fr;
+  background-color: #f2fcf8;
+  text-align: center;
+  position: static;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.parallax {
+  perspective: 1px;
+  background-image: url("IMG_3491.JPG");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+
+.parallax-small {
+  perspective: 1px;
+  background-image: url("IMG_3491.JPG");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.parallax > p {
+    font-size: 30px;
+    background-color: rgba(119, 141, 142, 0.70);
+    border-radius: 15px;
+    padding: 18px;
+    color:aliceblue;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    background-color: #e3ede975;
+    width: 70%;
+    margin: 10px;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.parallax-small > p {
+    grid-column: 2/-2;
+    font-size: 30px;
+    background-color: rgba(119, 141, 142, 0.70);
+    border-radius: 15px;
+    padding: 18px;
+    color:aliceblue;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+.wholeBodyContainer{
+  background-color: #333;
+  justify-content: center;
+  width: 100%;
+  animation: fadeIn 0.5s linear forwards;
+}
+
+.bodySect {
+  justify-content: center;
+  text-align: center;
+  background-color: #f2fcf8;
+  width: 100%;
+}
+
+.bodyIntro {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 0px 0px 40px 0px;
+  background-color: #157b48;
+  color: #f2fcf8;
+  
+
+}
+
+.skillsContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  padding: 20px;
+  background-color: #157b48;
+  color: #f2fcf8;
+}
+
+h6 {
+  font-size: 30px;
+  font-family: "Allura";
+  color: #226868;
+  display: inline;
+  padding: 0px 15px 0px 0px;
+}
+h5 {
+  font-family: "Cormorant SC";
+  color: blue;
+}
+h4 {
+  font-family: "Spectral SC";
+  font-size: 20px;
+}
+h3 {
+  font-family: "Gruppo";
+  font-size: 20px;
+}
+h2 {
+  font-family: "Poiret One";
+}
+h1 {
+  font-family: "Cormorant SC";
+  font-size: 30px;
+}
+p {
+  font-family: "Gruppo";
+  font-size: 16px;
+}
+
+.imgContainer {
+  font-family: "handlee";
+  background-color: #34a;
+  /* padding: 10px; */
+}
+
+.profileImg{
+  width: 300px;
+  height: auto;
+  border-radius: 40px;
+  border: 10px solid #e3ede9;
+  padding: 3px;
+  margin: 50px 0px 0px 0px; 
+}
+
+.LanguagesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #157b48;
+  background-color: #e3ede9;
+}
+
+.indvLang {
+  margin: 10px;
+  width: 15%;
+  border-radius: 50%;
+  position: relative;
+}
+
+.indvLang:hover {
+  background-color: #226868;
+  color: #e3ede9;
+}
+
+.blurb {
+  display: inline-block;;
+  width: 70%;
+  margin: 10px;
+  justify-content: center;
+  color: #157b48;
+}
+
+.blurbP {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hi {
+  font-family: "Syncopate";
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+ 0% { opacity:0; }
+ 100% { opacity:1; }
+}
+
+
+
+
+
+
+
+
+
